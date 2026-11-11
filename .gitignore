@@ -1,0 +1,6 @@
+# Compiled binary from `go build`
+/multistop
+
+# Nix build output symlinks
+result
+result-*

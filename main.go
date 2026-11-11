@@ -66,7 +66,7 @@ func tickCmd() tea.Cmd {
 func initialModel() model {
 	ti := textinput.New()
 	ti.CharLimit = 40
-	ti.Width = 30
+	ti.Width = 40
 
 	return model{
 		watches: []*stopwatch{
@@ -172,7 +172,7 @@ var (
 	greenDot   = lipgloss.NewStyle().Foreground(lipgloss.Color("10")).Render("●")
 	redDot     = lipgloss.NewStyle().Foreground(lipgloss.Color("9")).Render("●")
 	cursorStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("14")).Bold(true)
-	nameStyle   = lipgloss.NewStyle().Bold(true).Width(20)
+	nameStyle   = lipgloss.NewStyle().Bold(true).Width(40)
 	timeStyle   = lipgloss.NewStyle().Foreground(lipgloss.Color("15"))
 	dimStyle    = lipgloss.NewStyle().Foreground(lipgloss.Color("8"))
 	helpStyle   = lipgloss.NewStyle().Foreground(lipgloss.Color("8")).MarginTop(1)
